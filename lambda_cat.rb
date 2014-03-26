@@ -7,7 +7,7 @@ ARGV.each do |filename|
     end
   end
 end
-puts '  (0))].cycle.inject { |l| l.() }'
+puts '  (lambda{}))].cycle.inject { |l| l.() }'
 puts 'rescue NoMethodError'
 puts 'end'
 
