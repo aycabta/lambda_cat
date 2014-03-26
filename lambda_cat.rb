@@ -2,8 +2,8 @@ puts 'begin'
 puts '  [(\\'
 ARGV.each do |filename|
   open(filename, 'r') do |f|
-    f.each do |line|
-      puts "    lambda { |l| lambda { puts '#{line.chomp.gsub(/'|\\/, "'" => "\\'", '\\' => '\\\\')}'; l } }.call\\"
+    f.each do |line, escaped = line.chomp.gsub(/('|\\)/, '\\\\\1')|
+      puts "    lambda { |l| lambda { puts '#{escaped}'; l } }.call\\"
     end
   end
 end
