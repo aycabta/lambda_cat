@@ -1,10 +1,13 @@
-lines_sum = 0
+puts 'begin'
+puts '  [(\\'
 ARGV.each do |filename|
   open(filename, 'r') do |f|
-    f.readlines.reverse.each do |line|
-      puts "lambda{ |l| puts '#{line.chomp.gsub(/'|\\/, "'" => "\\'", '\\' => '\\\\')}'; l.() }.call\\"
-      lines_sum += 1
+    f.readlines.each do |line|
+      puts "    lambda { |l| lambda { puts '#{line.chomp.gsub(/'|\\/, "'" => "\\'", '\\' => '\\\\')}'; l } }.call\\"
     end
   end
 end
-puts "(1..#{lines_sum - 1}).inject(lambda{}){ |r| lambda{r} }"
+puts '  (0))].cycle.inject { |l| l.() }'
+puts 'rescue NoMethodError'
+puts 'end'
+
