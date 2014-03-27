@@ -3,7 +3,7 @@ lambda_cat
 
 ![animated lambda cat](https://raw.github.com/wiki/aycabta/lambda_cat/lambda_cat.gif)
 
-&lambda;.call &lambda;.call &lambda;.call &lambda;.call ... &lambda; # => Argurgurgurgument... I'm a bit hungry, may I go home?
+&lambda;.call &lambda;.call &lambda;.call &lambda;.call ... &lambda; # => Argurgurgurgument... I'm a bit hungry, rescue me! May I go home?
 
 ## usage
 
