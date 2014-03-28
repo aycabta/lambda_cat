@@ -7,7 +7,7 @@ ARGV.each do |filename|
     end
   end
 end
-puts '  (lambda{lambda}))].cycle.inject { |l| l.() }'
+puts '  (lambda{lambda}))].cycle.inject { |l| l.call() }'
 puts 'rescue ArgumentError'
 puts 'end'
 
