@@ -11,7 +11,9 @@ lambda_cat
 
 Just run `ruby lambda_cat.rb README.md | ruby` for now.
 
-Have you noticed even useful? Try to run `ruby lambda_cat.rb lambda_cat.rb | ruby | ruby - lambda_cat.rb | ruby | ruby - lambda_cat.rb` next.
+Have you noticed even useful? Try to run next:
+
+`ruby lambda_cat.rb lambda_cat.rb | ruby | ruby - lambda_cat.rb | ruby | ruby - lambda_cat.rb`
 
 ## badges
 
