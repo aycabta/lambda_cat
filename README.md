@@ -9,11 +9,11 @@ lambda_cat
 
 `$ ruby lambda_cat.rb [1sttextfile] [2ndtextfile] ... | ruby`
 
-Just run `ruby lambda_cat.rb README.md | ruby` for now.
+Just run `$ ruby lambda_cat.rb README.md | ruby` for now.
 
 Have you noticed even useful? Try to run next:
 
-`ruby lambda_cat.rb lambda_cat.rb | ruby | ruby - lambda_cat.rb | ruby | ruby - lambda_cat.rb`
+`$ ruby lambda_cat.rb lambda_cat.rb | ruby | ruby - lambda_cat.rb | ruby | ruby - lambda_cat.rb`
 
 ## badges
 
