@@ -5,7 +5,7 @@ lambda_cat
 
 &lambda;.call &lambda;.call &lambda;.call &lambda;.call ... &lambda; # => Argurgurgurgument... I'm a bit hungry, rescue me! May I go home?
 
-## usage
+## Usage
 
 `$ ruby lambda_cat.rb [1sttextfile] [2ndtextfile] ... | ruby`
 
@@ -15,7 +15,7 @@ Have you noticed even useful? Try to run next:
 
 `$ ruby lambda_cat.rb lambda_cat.rb | ruby | ruby - lambda_cat.rb | ruby | ruby - lambda_cat.rb`
 
-## badges
+## Badges
 
 [![Build Status](https://travis-ci.org/aycabta/lambda_cat.svg)](https://travis-ci.org/aycabta/lambda_cat)
 
