@@ -10,4 +10,3 @@ end
 puts '  (lambda{lambda}))].cycle.inject { |l| l.call }'
 puts 'rescue ArgumentError'
 puts 'end'
-

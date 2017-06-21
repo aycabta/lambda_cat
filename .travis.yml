@@ -4,4 +4,3 @@ rvm:
   - 2.4.1
 script:
   - ./test.sh
-

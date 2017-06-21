@@ -18,4 +18,3 @@ Have you noticed even useful? Try to run next:
 ## Badges
 
 [![Build Status](https://travis-ci.org/aycabta/lambda_cat.svg)](https://travis-ci.org/aycabta/lambda_cat)
-

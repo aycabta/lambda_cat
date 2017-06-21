@@ -17,4 +17,3 @@ ruby lambda_cat.rb lambda_cat.rb | ruby | ruby - lambda_cat.rb | ruby | ruby - t
 check_executed $?
 
 echo 'success'
-
