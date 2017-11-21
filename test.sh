@@ -19,4 +19,7 @@ check_executed $?
 ruby lambda_cat.rb lambda_cat.rb | ruby | ruby lambda_cat.rb - | ruby | ruby - test.txt | ruby | ( cat test.txt | diff -u /dev/fd/3 -) 3<&0
 check_executed $?
 
+ruby lambda_cat.rb lambda_cat.rb | ruby | ruby - test.txt README.md | ruby | ( cat test.txt README.md | diff -u /dev/fd/3 -) 3<&0
+check_executed $?
+
 echo 'success'
