@@ -1,10 +1,12 @@
 puts 'begin'
 puts '  [(\\'
 ARGV.each do |filename|
-  open(filename, 'r') do |f|
-    f.each do |line, escaped = line.chomp.gsub(/('|\\)/, '\\\\\1')|
-      puts "    lambda { |l| lambda { l.tap { puts '#{escaped}'} } }.call\\"
-    end
+  if filename == '-'
+    lambda { |&block| $stdin.each_line(&block) }
+  else
+    lambda { |&block| open(filename, 'r') { |f| f.each(&block) } }
+  end.call do |line, escaped = line.chomp.gsub(/('|\\)/, '\\\\\1')|
+    puts "    lambda { |l| lambda { l.tap { puts '#{escaped}'} } }.call\\"
   end
 end
 puts '  (lambda{lambda}))].cycle.inject { |l| l.call }'
