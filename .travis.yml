@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.3.5
-  - 2.4.2
+  - 2.3.6
+  - 2.4.3
 script:
   - ./test.sh
