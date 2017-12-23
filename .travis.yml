@@ -2,5 +2,6 @@ language: ruby
 rvm:
   - 2.3.6
   - 2.4.3
+  - jruby-9.1.15.0
 script:
   - ./test.sh
